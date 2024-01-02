@@ -196,6 +196,8 @@ impl Board for ArduinoLeonardo {
         Some(find_port_from_vid_pid_list(&[
             (0x2341, 0x0036),
             (0x2341, 0x8036),
+            (0x239A, 0x000E),  // Support for ItsyBitsy 5V
+            (0x239A, 0x000D),  // Support for ItsyBitsy 3V
             (0x2A03, 0x0036),
             (0x2A03, 0x8036),
         ]))
